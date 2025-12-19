@@ -6,7 +6,8 @@ void setup() {
 }
 
 void loop() {
-    // Set PB5 HIGH (LED ON)
-    PORTB |= (1 << PORTB5);
+    // Set PB5 LOW (LED OFF)
+    PORTB &= ~(1 << PORTB5);
 }
+
 
