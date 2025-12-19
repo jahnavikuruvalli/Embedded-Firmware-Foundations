@@ -6,8 +6,10 @@ void setup() {
 }
 
 void loop() {
-    // Set PB5 LOW (LED OFF)
-    PORTB &= ~(1 << PORTB5);
+    PORTB ^= (1 << PORTB5);
+    for (volatile long i = 0; i < 100000; i++);
 }
+
+
 
 

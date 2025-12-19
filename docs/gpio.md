@@ -16,4 +16,12 @@ without using Arduino abstractions.
 - DDRB: sets pin direction
 - PORTB: controls output level
 
+## GPIO Operations
+
+- Set pin HIGH using bitwise OR
+- Set pin LOW using bitwise AND with NOT
+- Toggle pin using XOR
+
+These operations map directly to physical pin voltage changes.
+
 This is the foundation for all embedded firmware work.
